@@ -3,6 +3,9 @@
 #include "FiguraGeometrica.hpp"
 #include "sculptor.hpp"
 
+/*! \brief
+  *  Desativa o voxel na posicao (x,y,z).
+*/
 class CutVoxel : public FiguraGeometrica{
   int x, y, z;
     

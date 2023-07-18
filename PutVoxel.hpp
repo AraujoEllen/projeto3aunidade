@@ -3,6 +3,9 @@
 #include "FiguraGeometrica.hpp"
 #include "sculptor.hpp"
 
+/*! \brief
+  *  Ativa o voxel na posicao (x,y,z) atribuindo cor e transparencia.
+*/ 
 class PutVoxel : public FiguraGeometrica{
   int x, y, z;
     

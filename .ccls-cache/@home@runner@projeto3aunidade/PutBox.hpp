@@ -3,6 +3,10 @@
 #include "FiguraGeometrica.hpp"
 #include "sculptor.hpp"
 
+/*! \brief
+  *  Ativa uma sequencia de voxels nos intervalos definidos
+  *  abaixo, atribuindo cor e transparencia.
+*/ 
 class PutBox : public FiguraGeometrica{
     int x0, y0, z0, x1, y1, z1;
     

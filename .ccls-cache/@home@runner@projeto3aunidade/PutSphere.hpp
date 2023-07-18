@@ -3,6 +3,10 @@
 #include "FiguraGeometrica.hpp"
 #include "sculptor.hpp"
 
+/*! \brief
+  *  Ativa todos os voxels que satizfazem a equacao 
+  *  da esfera, atribuindo cor e transparencia
+*/
 class PutSphere : public FiguraGeometrica{
   int xcenter, ycenter, zcenter, radius;
     

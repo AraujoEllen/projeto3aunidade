@@ -5,13 +5,10 @@
 CutSphere::CutSphere(int xcenter, int ycenter, int zcenter, int radius){
   this->xcenter = xcenter; this->ycenter = ycenter; this->zcenter = zcenter;
   this->radius  = radius;
-  //this->r = r; this->g = g; this->b = b; this->a = a;
 }
   
 void CutSphere::draw(Sculptor &s){
   int i, j, k;
-
-  //s.setColor(r, g, b, a);
   
   for(i = ((xcenter - radius)); i < (xcenter + radius); i++){
        for(j = (ycenter - radius); j < (ycenter + radius); j++){

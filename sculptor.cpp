@@ -58,8 +58,8 @@ void Sculptor::setColor(float r, float g, float b, float alpha){
 
 //ativa o voxel na posicao (x,y,z) atribuindo cor e transparencia
 void Sculptor::putVoxel(int x, int y, int z){
-  if (x < 0 || y < 0 || z < 0) {
-    std::cout<<"Erro!\n";
+  if (x < 0 || y < 0 || z < 0 || x >= nx || y >= ny || z >= nz) {
+    return;
   }
   else{
     v[x][y][z].show = true;
@@ -72,6 +72,10 @@ void Sculptor::putVoxel(int x, int y, int z){
     
 //desativa o voxel na posicao (x,y,z)
 void Sculptor::cutVoxel(int x, int y, int z){
+   if (x < 0 || y < 0 || z < 0 || x >= nx || y >= ny || z >= nz) {
+    return;
+  }
+
   v[x][y][z].show = false;
 }
   

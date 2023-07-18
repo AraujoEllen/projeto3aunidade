@@ -2,7 +2,9 @@
 #define FIGURAGEOMETRICA_HPP
 #include "sculptor.hpp"
 
-
+/*! \brief
+  *Classe abstrata que representa objetos primitivos genéricos
+*/
 class FiguraGeometrica{
 protected:
     float r, g, b, a;
